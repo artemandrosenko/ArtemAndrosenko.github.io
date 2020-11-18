@@ -105,6 +105,7 @@ body {
     text-decoration: none; }
 
 .nav.active {
+  display: block;
   position: fixed;
   top: 15vh;
   left: 0;

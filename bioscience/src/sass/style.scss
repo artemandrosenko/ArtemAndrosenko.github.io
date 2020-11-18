@@ -114,6 +114,7 @@ body {
     }
 }
 
+
 .icon {
     display: inline-block;
     font-style: normal;
@@ -132,6 +133,7 @@ body {
 
 .nav {
     &.active {
+        display: block;
         position: fixed;
         top: 15vh;
         left: 0;
