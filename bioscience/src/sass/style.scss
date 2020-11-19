@@ -164,8 +164,21 @@ body {
         width: 30px;
         height: 1px;
         background-color: black;
+        transition: .4s;
         &:not(:last-child) {
             margin-bottom: 5px;
         }
+    }
+}
+
+.open {
+    .line-1 {
+        transform: rotate(45deg);
+    }
+    .line-2 {
+        opacity: 0;
+    }
+    .line-3 {
+        transform: rotate(-45deg) translate(7px, -9px);
     }
 }
