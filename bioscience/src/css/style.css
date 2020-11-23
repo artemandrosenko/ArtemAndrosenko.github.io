@@ -24,10 +24,11 @@ body {
   width: 100%; }
 
 .wrapper {
-  margin: 0 5px; }
+  margin: 0 15px; }
   @media (min-width: 576px) {
     .wrapper {
-      max-width: 540px; } }
+      max-width: 540px;
+      margin: 0 auto; } }
   @media (min-width: 768px) {
     .wrapper {
       max-width: 720px; } }
