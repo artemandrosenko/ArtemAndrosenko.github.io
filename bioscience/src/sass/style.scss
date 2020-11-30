@@ -152,11 +152,20 @@ body {
 .nav {
     &.active {
         position: fixed;
-        top: 15vh;
+        top: 12vh;
         left: 0;
         width: 100%;
-        height: 85vh;
+        height: 88vh;
+        background-color: #fff;
         opacity: 1;
+        @media (min-width: 768px) {
+            top: 23vh;
+        }
+        @media (min-width: 992px) {
+            position: static;
+            width: 60%;
+            height: auto;
+        }
     }
     &__list {
         display: flex;
