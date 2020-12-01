@@ -44,7 +44,8 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background-color: white; }
+  background-color: white;
+  z-index: 1000; }
   .header__top-line {
     display: none;
     padding: 5px 0;
@@ -93,7 +94,7 @@ body {
         display: none; } }
   .header__nav {
     position: fixed;
-    top: 15vh;
+    top: 89px;
     left: 100%;
     height: 85vh;
     width: 100%;
@@ -101,7 +102,7 @@ body {
     transition: all 1s; }
     @media (min-width: 768px) {
       .header__nav {
-        top: 19vh; } }
+        top: 158px; } }
     @media (min-width: 992px) {
       .header__nav {
         position: static;
@@ -126,15 +127,18 @@ body {
 
 .nav.active {
   position: fixed;
-  top: 12vh;
+  top: 89px;
   left: 0;
   width: 100%;
   height: 88vh;
   background-color: #fff;
   opacity: 1; }
+  @media (min-width: 375px) {
+    .nav.active {
+      top: 89px; } }
   @media (min-width: 768px) {
     .nav.active {
-      top: 23vh; } }
+      top: 158px; } }
   @media (min-width: 992px) {
     .nav.active {
       position: static;

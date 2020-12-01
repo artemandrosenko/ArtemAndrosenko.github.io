@@ -50,6 +50,7 @@ body {
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1000;
     &__top-line {
         display: none;
         padding: 5px 0;
@@ -114,14 +115,14 @@ body {
     }
     &__nav {
         position: fixed;
-        top: 15vh;
+        top: 89px;
         left: 100%;
         height: 85vh;
         width: 100%;
         opacity: 0;
         transition: all 1s;
         @media (min-width: 768px) {
-            top: 19vh;
+            top: 158px;
         }
         @media (min-width: 992px) {
             position: static;
@@ -154,14 +155,17 @@ body {
 .nav {
     &.active {
         position: fixed;
-        top: 12vh;
+        top: 89px;
         left: 0;
         width: 100%;
         height: 88vh;
         background-color: #fff;
         opacity: 1;
+        @media (min-width: 375px) {
+            top: 89px;
+        }
         @media (min-width: 768px) {
-            top: 23vh;
+            top: 158px;
         }
         @media (min-width: 992px) {
             position: static;
