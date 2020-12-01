@@ -184,3 +184,30 @@ body {
 
 .open .line-3 {
   transform: rotate(-45deg) translate(7px, -9px); }
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url(../img/hero-500.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .hero {
+      background-image: url(../img/hero-900.jpg); } }
+  @media (min-width: 992px) {
+    .hero {
+      background-image: url(../img/hero-1280.jpg); } }
+  @media (min-width: 1281px) {
+    .hero {
+      background-image: url(../img/hero.jpg); } }
+  .hero__heading {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: var(--blue-dark);
+    text-align: center;
+    transform: translateY(-50%); }
+    @media (min-width: 768px) {
+      .hero__heading {
+        font-size: 3.4rem; } }
