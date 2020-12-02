@@ -21,8 +21,9 @@ html {
 
 body {
 	box-sizing: border-box;
-    font-size: 1.6rem;
     background-color: var(--bg-main);
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 .img {
@@ -222,22 +223,80 @@ body {
     }
 }
 
+.section {
+    &__hero {
+        position: relative;
+        height: 80vh;
+        background-image: url(../img/hero-500.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 768px) {
+            background-image: url(../img/hero-900.jpg);
+        }
+        @media (min-width: 992px) {
+            background-image: url(../img/hero-1280.jpg);
+        }
+        @media (min-width: 1281px) {
+            background-image: url(../img/hero.jpg);
+        }
+    }
+    &__heading {
+        margin: 30px 0;
+        color: var(--blue-light);
+        text-align: center;
+    }
+    &__article {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+    &__description {
+        padding: 20px;
+        background-color: #fff;
+        font-size: 1.3rem;
+        text-align: justify;
+        @media (min-width: 992px) {
+            position: relative;
+            left: 100px;
+            width: 50%;
+            padding: 10px;
+            align-self: center;
+            font-size: 1.4rem;
+        }
+    }
+    &__img-box {
+        width: 100%;
+        order: -1;
+        @media (min-width: 992px) {
+            width: 50%;
+            order: 1;
+        }
+    }
+    &__btn {
+        float: right;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid var(--blue-dark);
+        border-radius: 5px;
+        background-color: var(--blue-dark);
+        color: #fff;
+        transition: all 1s;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: var(--blue-dark);
+            transition: all 1s;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
 .hero {
-    position: relative;
-    height: 80vh;
-    background-image: url(../img/hero-500.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: 768px) {
-        background-image: url(../img/hero-900.jpg);
-    }
-    @media (min-width: 992px) {
-        background-image: url(../img/hero-1280.jpg);
-    }
-    @media (min-width: 1281px) {
-        background-image: url(../img/hero.jpg);
-    }
     &__heading {
         position: absolute;
         top: 50%;
