@@ -143,10 +143,12 @@
                             <a class="nav__link" href="#">Послуги</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Пацієнту</a>
+                            <a class="nav__link" href="#for-patient"
+                                >Пацієнту</a
+                            >
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Лікарю</a>
+                            <a class="nav__link" href="#for-doctor">Лікарю</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Контакти</a>
@@ -162,7 +164,7 @@
             </div>
         </section>
 
-        <section id="about-us" class="section__about-us about-us">
+        <section id="about-us" class="section section__about-us">
             <div class="wrapper">
                 <h2 class="section__heading">Про нас</h2>
                 <article class="section__article">
@@ -182,7 +184,7 @@
                             проводять для вивчення механізму хвороби - називають
                             біобанкінгом.
                         </p>
-                        <button class="section__btn">Дізнатися більше</button>
+                        <a class="section__btn">Дізнатися більше</a>
                     </div>
                     <div class="section__img-box">
                         <img
@@ -195,9 +197,87 @@
                             sizes="(max-width: 500px) 470px,
                                 (max-width: 768px) 720px,
                                 (min-width: 992px) 570px"
-                            src="img/logo.png"
+                            src="./img/about-us-720.jpg"
                             alt="laboratory"
                         />
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="for-patient" class="section section__our-offer our-offer">
+            <div class="wrapper">
+                <h2 class="section__heading">
+                    Що ми пропонуємо?
+                    <span class="section__heading--sub">Для пацієнта</span>
+                </h2>
+                <article class="section__article">
+                    <div class="section__img-box section__img-box--left">
+                        <img
+                            class="section__img"
+                            srcset="
+                                ./img/patient-500.jpg 500w,
+                                ./img/patient-570.jpg 570w,
+                                ./img/patient-720.jpg 720w
+                            "
+                            sizes="(max-width: 500px) 470px,
+                                (max-width: 768px) 720px,
+                                (min-width: 992px) 570px"
+                            src="./img/patient-720.jpg"
+                            alt="patient care"
+                        />
+                    </div>
+                    <ul class="our-offer__list our-offer__list--rigth">
+                        <li class="our-offer__item">
+                            Підтримати дослідження, що стосуються Вашої хвороби.
+                        </li>
+                        <li class="our-offer__item">
+                            Отримати дослідницьку інформацію, яка може бути
+                            використана для Вашого лікування, або лікування
+                            членів Вашої родини.
+                        </li>
+                        <li class="our-offer__item">
+                            Допомогти іншим людям з таким же діагнозом.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="for-doctor" class="section section__our-offer our-offer">
+            <div class="wrapper">
+                <h2 class="section__heading">
+                    <span class="section__heading--sub">Для лікаря</span>
+                </h2>
+                <article id="for-doctor1" class="section__article">
+                    <div class="section__img-box">
+                        <img
+                            class="section__img"
+                            srcset="
+                                ./img/doc-500.jpg 500w,
+                                ./img/doc-570.jpg 570w,
+                                ./img/doc-720.jpg 720w
+                            "
+                            sizes="(max-width: 500px) 470px,
+                                (max-width: 768px) 720px,
+                                (min-width: 992px) 570px"
+                            src="./img/doc-720.jpg"
+                            alt="doctor"
+                        />
+                    </div>
+                    <div class="section__description">
+                        <ul class="our-offer__list our-offer__list--left">
+                            <li class="our-offer__item">
+                                Долучитися до глобального процесу розвитку
+                                сучасної науки
+                            </li>
+                            <li class="our-offer__item">
+                                Сприяти створенню новітніх методів діагностики
+                                та лікування захворювань
+                            </li>
+                            <li class="our-offer__item">
+                                Професійно зростати та бути новатором
+                            </li>
+                        </ul>
+                        <a class="section__btn">Дізнатися більше</a>
                     </div>
                 </article>
             </div>
