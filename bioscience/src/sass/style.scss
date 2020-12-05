@@ -317,6 +317,18 @@ body {
     &__img {
         width: 100%;
     }
+    &__our-statements {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px;
+        // background-color: #fff;
+        border-radius: 5px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 }
 
 .hero {
@@ -375,5 +387,23 @@ body {
     }
     p {
         margin-bottom: 10px;
+    }
+}
+
+.our-statements {
+    strong {
+        color: var(--blue-dark);
+    }
+    p {
+        margin-bottom: 20px;
+        @media (min-width: 992px) {
+            font-size: 1.4rem;
+        }
+    }
+    &__mission,
+    &__vision {
+        @media (min-width: 768px) {
+            width: 48%;
+        }
     }
 }

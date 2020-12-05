@@ -268,6 +268,16 @@ body {
       transition: all 1s; }
   .section__img {
     width: 100%; }
+  .section__our-statements {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px; }
+    @media (min-width: 768px) {
+      .section__our-statements {
+        flex-direction: row;
+        justify-content: space-between; } }
 
 .hero__heading {
   position: absolute;
@@ -318,3 +328,16 @@ body {
 
 .our-offer p {
   margin-bottom: 10px; }
+
+.our-statements strong {
+  color: var(--blue-dark); }
+
+.our-statements p {
+  margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    .our-statements p {
+      font-size: 1.4rem; } }
+
+@media (min-width: 768px) {
+  .our-statements__mission, .our-statements__vision {
+    width: 48%; } }
