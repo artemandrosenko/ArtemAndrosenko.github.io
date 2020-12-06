@@ -134,21 +134,21 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#about-us">Про нас</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Чому ми?</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">Послуги</a>
-                        </li>
-                        <li class="nav__item">
                             <a class="nav__link" href="#for-patient"
                                 >Пацієнту</a
                             >
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#for-doctor">Лікарю</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#about-us">Про нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#why-us">Чому ми?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Послуги</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Контакти</a>
@@ -311,6 +311,43 @@
                 <div class="testimonials__comment">Наука, що рятує життя</div>
             </div>
         </section>
+
+        <div class="wrapper">
+            <section id="why-us" class="section__why-us section">
+                <h2 class="section__heading">Чому ми?</h2>
+                <article class="section__article">
+                    <div class="section__description">
+                        <p>
+                            Створення біобанків у всьому світі дає можливість
+                            сучасній медичній науці працювати над розробкою
+                            новітніх та найбільш ефективних методів лікування
+                            широкого спектру складних захворювань. Саме тому
+                            можна впевнено говорити, що біобанкінг змінює наш
+                            світ. І компанія
+                            <strong>Ukraine Bioscience</strong> активно працює
+                            над тим, щоб Україна могла стати частиною цього
+                            глобального процесу.
+                        </p>
+                        <a class="section__btn">Дізнатися більше</a>
+                    </div>
+                    <div class="section__img-box">
+                        <img
+                            class="section__img"
+                            srcset="
+                                ./img/our-team-500.jpg 500w,
+                                ./img/our-team-570.jpg 570w,
+                                ./img/our-team-720.jpg 720w
+                            "
+                            sizes="(max-width: 500px) 470px,
+                                (max-width: 768px) 720px,
+                                (min-width: 992px) 570px"
+                            src="./img/our-team-720.jpg"
+                            alt="our team"
+                        />
+                    </div>
+                </article>
+            </section>
+        </div>
 
         <script src="js/main.js"></script>
     </body>

@@ -155,7 +155,8 @@ body {
   text-align: center; }
   @media (min-width: 992px) {
     .nav__list {
-      flex-direction: row; } }
+      flex-direction: row;
+      font-size: 1.7rem; } }
 
 .nav__item {
   padding: 20px 0;
