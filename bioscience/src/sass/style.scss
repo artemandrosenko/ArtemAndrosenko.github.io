@@ -322,12 +322,19 @@ body {
         flex-direction: column;
         margin-top: 20px;
         padding: 20px;
-        // background-color: #fff;
         border-radius: 5px;
         @media (min-width: 768px) {
             flex-direction: row;
             justify-content: space-between;
         }
+    }
+    &__testimonials {
+        position: relative;
+        height: 80vh;
+        background-image: url(../img/consultation-1.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -405,5 +412,16 @@ body {
         @media (min-width: 768px) {
             width: 48%;
         }
+    }
+}
+
+.testimonials {
+    &__comment {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3.4rem;
+        font-weight: bold;
+        color: var(--blue-dark);
     }
 }
