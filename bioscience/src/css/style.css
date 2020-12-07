@@ -286,6 +286,11 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
+  .section__tile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; }
 
 .hero__heading {
   position: absolute;
@@ -357,3 +362,22 @@ body {
   font-size: 3.4rem;
   font-weight: bold;
   color: var(--blue-dark); }
+
+.services__tile {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 2.1rem;
+  align-items: center;
+  text-align: center; }
+
+.tile__icon {
+  display: block;
+  width: 32pt;
+  height: 32pt;
+  margin-bottom: 20px;
+  fill: var(--blue-dark); }
