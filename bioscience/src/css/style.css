@@ -282,10 +282,16 @@ body {
   .section__testimonials {
     position: relative;
     height: 80vh;
-    background-image: url(../img/consultation-1.jpg);
+    background-image: url(../img/testimonials-500.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .section__testimonials {
+        background-image: url(../img/testimonials-900.jpg); } }
+    @media (min-width: 992px) {
+      .section__testimonials {
+        background-image: url(../img/testimonials-1280.jpg); } }
   .section__tile-grid {
     display: flex;
     flex-wrap: wrap;
