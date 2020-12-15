@@ -75,7 +75,8 @@ body {
             color: var(--blue-light);
         }
     }
-    &__mail {
+    &__mail,
+    .mail {
         &::before {
             content: "\f0e0";
             font-family: "Font Awesome 5 Free";
@@ -86,7 +87,8 @@ body {
             }
         }
     }
-    &__tel {
+    &__tel,
+    .tel {
         &::before {
             content: "\f879";
             font-family: "Font Awesome 5 Free";

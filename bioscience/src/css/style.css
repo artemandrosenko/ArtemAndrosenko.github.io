@@ -65,19 +65,23 @@ body {
     .header__mail:hover, .header__tel:hover {
       text-decoration: underline;
       color: var(--blue-light); }
-  .header__mail::before {
+  .header__mail::before,
+  .header .mail::before {
     content: "\f0e0";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 5px; }
-    .header__mail::before:hover {
+    .header__mail::before:hover,
+    .header .mail::before:hover {
       text-decoration: none; }
-  .header__tel::before {
+  .header__tel::before,
+  .header .tel::before {
     content: "\f879";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 5px; }
-    .header__tel::before:hover {
+    .header__tel::before:hover,
+    .header .tel::before:hover {
       text-decoration: none; }
   .header__main {
     display: flex;
