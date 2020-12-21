@@ -441,3 +441,22 @@ body {
   .footer__address {
     margin-top: 20px;
     font-style: normal; }
+
+article .subheader {
+  display: list-item;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1.3rem; }
+  article .subheader:not(:first-child) {
+    margin-top: 20px; }
+  @media (min-width: 768px) {
+    article .subheader {
+      font-size: 2rem; } }
+
+article p {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    article p {
+      font-size: 1.6rem; } }

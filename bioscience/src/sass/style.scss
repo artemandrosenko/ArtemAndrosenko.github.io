@@ -526,3 +526,26 @@ body {
         font-style: normal;
     }
 }
+
+article {
+    .subheader {
+        display: list-item;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        list-style-type: disc;
+        list-style-position: outside;
+        font-size: 1.3rem;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+    }
+}
