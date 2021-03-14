@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    position: relative;
+    width: 30vw;
+    height: 80vh;
+}
+
+img {
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    left: 50%;
+    width: 0.5em;
+    height: 100%;
+    background-color: #fff;
+    pointer-events: none;
+    transform: translate(-50%, 0%);
+    z-index: 1000;
+}
